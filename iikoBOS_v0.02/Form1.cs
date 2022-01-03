@@ -36,10 +36,31 @@ namespace iikoBOS_v0._02
 
         private void BTN_start_Click(object sender, EventArgs e)
         {
-            GetServerProperties();
+            TB_console.Clear();
+            GetServerPropertiesAndOpenBackOffice();
         }
 
         private void GetServerProperties()
+        {
+            if (!mUrl.Contains("/resto"))
+            { mUrl = mUrl + "/resto"; }
+
+            bool res = Uri.IsWellFormedUriString(mUrl, UriKind.Absolute);
+            if (res == false)
+            {
+                TB_console.Text = string.Format("ERROR: URL адрес " + mUrl + " не верный. Используй URL формата" +
+                                      " https://exmple.iiko.it или https://exmple.iiko.it/resto ");
+            }
+            var url = mUrl + "/get_server_info.jsp?encoding=UTF-8";
+            UrlService urlService = new UrlService();
+
+            var serverProperties = urlService.GetServerProperties(url);
+            TB_console.Text = string.Format("ServerVersion: {0}+ \r\nServerState: {1}\r\nEdition {2}",
+                 serverProperties.Version, serverProperties.ServerState, serverProperties.Edition);
+
+        }
+
+        private void GetServerPropertiesAndOpenBackOffice()
         {
 
             if (!mUrl.Contains("/resto"))
@@ -110,7 +131,6 @@ namespace iikoBOS_v0._02
             }
 
             string searchPattern = edition + versionName;
-            TB_console.Text += string.Format("Ищу в " + TB_path.Text + " где " + searchPattern + "\r\n");
 
 
             var directories = Directory.EnumerateDirectories(TB_path.Text, searchPattern, SearchOption.AllDirectories);
@@ -120,31 +140,26 @@ namespace iikoBOS_v0._02
                 {
                     if (directory.Contains("Chain") && serverProperties.Edition != "chain")
                     {
-                        TB_console.Text += string.Format(directory + " пропускаем\r\n");
                         continue;
                     }
                     else if (!(File.Exists(directory + @"\BackOffice.exe")))
                     {
-                        TB_console.Text += string.Format(directory + " пропускаем\r\n");
                         continue;
                     }
 
                     else
                     {
+                        TB_console.Text += string.Format("Открываю " + directory + @"\BackOffice.exe");
                         using (Process myProcess = new Process())
                         {
                             myProcess.StartInfo.UseShellExecute = false;
                             myProcess.StartInfo.FileName = directory + @"\BackOffice.exe";
                             myProcess.StartInfo.CreateNoWindow = true;
-                            myProcess.Start();
-                        }
+                            myProcess.Start();  
+                        }   
                     }
-                }
-
-                TB_console.Text = "";
+                }   
             }
-
-
             catch (Exception e)
             {
                 TB_console.Text += string.Format(e.Message);
@@ -160,6 +175,13 @@ namespace iikoBOS_v0._02
 
         private void LA_path_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            TB_console.Clear();
+            GetServerProperties();
 
         }
     }
