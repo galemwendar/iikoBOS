@@ -5,14 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IikoBOS_v0._02WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="211.4" Width="377.2" WindowStyle="ThreeDBorderWindow" BorderThickness="0" BorderBrush="#FFFDFDFD" Background="White">
-    <Grid Margin="0,0,-5.8,10.6">
+        Title="MainWindow" Height="681.2" Width="611" WindowStyle="ThreeDBorderWindow" BorderThickness="0" BorderBrush="#FFFDFDFD" Background="White">
+    <Grid Margin="187,0,74.8,326">
         <TextBox HorizontalAlignment="Left" Height="19" Margin="21,40,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"/>
         <TextBlock HorizontalAlignment="Left" Margin="21,20,0,0" TextWrapping="Wrap" Text="Укажите путь до папки с бэками" VerticalAlignment="Top" Height="15" Width="220"/>
-        <Button Content="Обзор" HorizontalAlignment="Left" Margin="246,40,0,0" VerticalAlignment="Top" Width="95"/>
+        <Button Content="Обзор" HorizontalAlignment="Left" Margin="246,40,0,0" VerticalAlignment="Top" Width="74"/>
         <TextBlock HorizontalAlignment="Left" Margin="21,80,0,0" TextWrapping="Wrap" Text="Адрес сервера" VerticalAlignment="Top" Height="15" Width="220"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="21,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="220"/>
-        <Button Content="Открыть" HorizontalAlignment="Left" Margin="246,134,0,0" VerticalAlignment="Top" Width="95" Height="23"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="21,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="299"/>
+        <Button Content="Открыть" HorizontalAlignment="Left" Margin="225,279,0,0" VerticalAlignment="Top" Width="95" Height="23"/>
+        <TextBox HorizontalAlignment="Left" Height="128" Margin="21,140,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="299"/>
+        <Grid Margin="-180,4,353,9">
+            <Button Content="Обзор" HorizontalAlignment="Left" Margin="246,40,0,0" VerticalAlignment="Top" Width="74"/>
+            <Button Content="Открыть" HorizontalAlignment="Left" Margin="275,276,-210.2,0" VerticalAlignment="Top" Width="95" Height="23"/>
+            <ListBox HorizontalAlignment="Left" Height="289" Margin="10,10,0,0" VerticalAlignment="Top" Width="150"/>
+
+        </Grid>
 
     </Grid>
 </Window>

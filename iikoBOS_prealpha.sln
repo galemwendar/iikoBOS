@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iikoBOS_prealpha_API", "iik
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iikoBOS_v0.02", "iikoBOS_v0.02\iikoBOS_v0.02.csproj", "{5A407F5B-974D-4C29-B36E-815B67D8E22F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IikoBOS_v0.02WPF", "IikoBOS_v0.02WPF\IikoBOS_v0.02WPF.csproj", "{3FECDEED-8D2C-40B3-8E44-74243B07A64B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{69ED54CF-754A-415F-BACB-556DD71C7FDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{5A407F5B-974D-4C29-B36E-815B67D8E22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A407F5B-974D-4C29-B36E-815B67D8E22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A407F5B-974D-4C29-B36E-815B67D8E22F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3FECDEED-8D2C-40B3-8E44-74243B07A64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FECDEED-8D2C-40B3-8E44-74243B07A64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FECDEED-8D2C-40B3-8E44-74243B07A64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FECDEED-8D2C-40B3-8E44-74243B07A64B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69ED54CF-754A-415F-BACB-556DD71C7FDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69ED54CF-754A-415F-BACB-556DD71C7FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69ED54CF-754A-415F-BACB-556DD71C7FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69ED54CF-754A-415F-BACB-556DD71C7FDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
