@@ -26,12 +26,12 @@ namespace WindowsFormsApp1.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Settings {
+        public string Path {
             get {
-                return ((string)(this["Settings"]));
+                return ((string)(this["Path"]));
             }
             set {
-                this["Settings"] = value;
+                this["Path"] = value;
             }
         }
     }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace iikoBOS_v0._02.Properties {
+namespace iikoCheckVersion._02.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

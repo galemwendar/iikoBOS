@@ -18,7 +18,9 @@ namespace ikoitgetversion
             {
 
                 try
-                {   //проверяем версию сервера
+                {
+                    //Server server = new Server();
+                    //проверяем версию сервера
                     string sURL;
                     Console.WriteLine("введите адрес сервера (адрес:порт, если локальный):");
                     string adress = Console.ReadLine();

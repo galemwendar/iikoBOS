@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace iikoBOS_v0._02
+namespace iikoCheckVersion._02
 {
     static class Program
     {
